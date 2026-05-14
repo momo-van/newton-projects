@@ -8,9 +8,9 @@ build/
 .env
 
 # Large regenerable benchmark artifacts (exceed GitHub file limits)
-examples/spline_insertion/phase3_dynamics/slides/*.pptx
-examples/spline_insertion/phase3_dynamics/videos/mujoco*.mp4
-examples/spline_insertion/phase3_dynamics/videos/vbd*.mp4
+projects/spline_insertion/phase3_dynamics/slides/*.pptx
+projects/spline_insertion/phase3_dynamics/videos/mujoco*.mp4
+projects/spline_insertion/phase3_dynamics/videos/vbd*.mp4
 
 # Transient artifacts
 imgui.ini

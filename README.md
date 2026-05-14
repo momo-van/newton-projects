@@ -1,8 +1,8 @@
-# Newton Examples
+# Newton Projects
 
-A collection of demos and extensions built on [Newton](https://github.com/newton-physics/newton) — NVIDIA's open-source GPU-accelerated rigid-body physics engine.
+A collection of demos, benchmarks, and extensions built on [Newton](https://github.com/newton-physics/newton) — NVIDIA's open-source GPU-accelerated rigid-body physics engine.
 
-Each example lives in its own subfolder under `examples/` with its own code, assets, and tests.
+Each project lives in its own subfolder under `projects/` with its own code, assets, and tests.
 
 ---
 
@@ -28,9 +28,9 @@ pip install newton warp-lang usd-core numpy
 
 | Example | Description |
 |---|---|
-| [rj45_hydro](examples/rj45_hydro/) | RJ45 plug insertion with hydroelastic contacts and live pressure patch visualisation |
-| [spline_insertion](examples/spline_insertion/) | DIN 5480 16-tooth splined shaft kinematically driven into its mating hub; Newton mesh-SDF contacts visualised as arrows |
-| [compile_time_bench](examples/compile_time_bench/) | Cold-start compile-time benchmark for Newton 1.2's Kamino, MuJoCo, and VBD solvers — randomized 3-iteration runs, phase + per-kernel breakdown, PDF report |
+| [rj45_hydro](projects/rj45_hydro/) | RJ45 plug insertion with hydroelastic contacts and live pressure patch visualisation |
+| [spline_insertion](projects/spline_insertion/) | DIN 5480 16-tooth splined shaft kinematically driven into its mating hub; Newton mesh-SDF contacts visualised as arrows |
+| [compile_time_bench](projects/compile_time_bench/) | Cold-start compile-time benchmark for Newton 1.2's Kamino, MuJoCo, and VBD solvers — randomized 3-iteration runs, phase + per-kernel breakdown, PDF report |
 
 ---
 
@@ -39,21 +39,21 @@ pip install newton warp-lang usd-core numpy
 Each example has its own test suite. To run all tests across every example:
 
 ```powershell
-python -m pytest examples/ -v
+python -m pytest projects/ -v
 ```
 
 Or for a specific example:
 
 ```powershell
-python -m pytest examples/rj45_hydro/tests/ -v
-python -m pytest examples/spline_insertion/tests/ -v
+python -m pytest projects/rj45_hydro/tests/ -v
+python -m pytest projects/spline_insertion/tests/ -v
 ```
 
 ---
 
 ## Contributing a new example
 
-1. Create a subfolder: `examples/<your_example>/`
+1. Create a subfolder: `projects/<your_example>/`
 2. Add your Python files and a `tests/` directory
 3. Include a `README.md` inside the subfolder describing what the example demonstrates and how to run it
 
